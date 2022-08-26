@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+// $bodyBackground: black;
+$titleColor: white;
+// $subtitleColor: red;
+$font: "Silkscreen", cursive;
+// $titleSize: 65px;
+// $subtitleSize: 45px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin body ($background: black ){
+    background-color: $background;
+    font-family: $font;
+}
+
+@mixin title ($fontColor: white, $titleSize: 65px){
+    color: $fontColor;
+    font-size: $titleSize;
+    text-align: center;
+}
+
+@mixin overview($background: white, $fontColor: red, $textSize: 45px) {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 25px auto;
+  padding: 17px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+  background-color: $background;
+
+  h2 {
+    color: $fontColor;
+    font-size: $textSize;
+  }
+
+  p {
+    font-family: $font;
+    color: $fontColor;
+  }
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+$font: 'Nunito', sans-serif;
+
+// COLOR PALLETE
+$cornFlower: #4C5270;
+$hotPink: #F652A0;
+$cyan: #36EEE0;
+$tifannyBlue: #BCECE0;
+$white: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
